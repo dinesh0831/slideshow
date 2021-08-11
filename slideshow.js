@@ -42,11 +42,11 @@ function hover()
         
         
     }
-// function start()
-// {
+function start()
+{
     
-// setInterval(img,1000*2)
-// }
+setInterval(img,1000*2)
+}
 
 
 
