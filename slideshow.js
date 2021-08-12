@@ -9,8 +9,23 @@ function img ()
     const imag=document.querySelector(".img");
     imag.setAttribute("src",`${image[index]}`)
     index++; 
+}  
+
+var interval=setInterval(img,1000*2)
+function restart()
+{
+     interval=setInterval(img,1000*2)
 }
-let interval=setInterval(img,1000*2)
+
+
+    function stop()
+    {
+        clearInterval(interval);   
+    }
+  
+   
+    
+
 function backward()
 {
    if(index==0)
@@ -36,17 +51,15 @@ function forward()
     
 }
 
-function hover()
-    {
-        clearInterval(interval);
-        
-        
-    }
-// function start()
-// {
-    
-// setInterval(img,1000*2)
-// }
+
+
+
+
+
+
+
+
+
 
 
 
